@@ -146,15 +146,16 @@ img{
     color: var(--accent-txt-cl);
 }
 .header-socials-icon{
-    fill: var(--icons-cl);
+    /* fill: var(--icons-cl); */
+    fill: currentColor;
     margin-right: 10px;
 }
-.header-mail:hover .header-socials-icon,
+/* .header-mail:hover .header-socials-icon,
 .header-mail:focus .header-socials-icon,
 .header-phone:hover .header-socials-icon,
 .header-phone:focus .header-socials-icon {
     fill: var(--accent-txt-cl);
-}
+} */
 
 
 /* Hero section */
@@ -167,10 +168,10 @@ img{
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--dark-bg-cl);
-    background-image: url(../images/hero/hero-bg.png);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg.jpeg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 .main-title{
     font-weight: 900;
@@ -298,7 +299,7 @@ img{
     margin-right: 0;
 }
 .contacts-card{
-    padding: 30px 59px;
+    padding: 30px 0;
     text-align: center;
 }
 .contacts-title{
@@ -313,7 +314,7 @@ img{
     line-height: calc(19 / 16);    
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
-    margin-bottom: -14px;
+    margin-bottom: 16px;
 }
 .socials{
     display: flex;
@@ -325,25 +326,21 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--light-txt-cl);
+    color: var(--icons-cl);
     /* outline: 1px solid red; */
 }
 .socials-icon{
-    fill: var(--icons-cl);
+    fill: currentColor;
 }
 .socials-link:hover,
 .socials-link:focus{
     background-color: var(--accent-txt-cl);
+    color: var(--light-txt-cl);
 }
 
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon{
-    fill: var(--light-txt-cl);
-}
 
 
 /* Clients section */
@@ -358,24 +355,23 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
     width: 170px;
     height: 92px;
     border-radius: 4px;
-    background-color: var(--light-txt-cl);
+    color: var(--icons-cl);
     border: 1px solid var(--icons-cl);
 }
 .clients-icon{
-    fill: var(--icons-cl);
+    /* fill: var(--icons-cl); */
+    fill: currentColor;
 }
 .clients-link:hover,
 .clients-link:focus{
-    border: 1px solid var(--accent-txt-cl);
+    border-color: var(--accent-txt-cl);
+    color: var(--accent-txt-cl);
 }
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon{
-    fill: var(--accent-txt-cl);
-}
+
+
 
 /* Footer */
 .footer{
@@ -387,13 +383,15 @@ img{
     display: flex;
     align-items: baseline;
 }
+.footer-block{
+    margin-right: 70px;
+}
 .logo-footer{
     color: var(--light-txt-cl);
 }
 .footer-address{
     font-style: normal;
     margin-top: 20px;
-    margin-right: 70px;
 }
 .footer-item{
     margin-bottom: 9px;
@@ -424,10 +422,10 @@ img{
     color: var(--accent-txt-cl);
 }
 .join{
-    display: flex;
+    /* display: flex;
     align-items: baseline;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
     /* width: 206px;
     height: 44px;
     flex-wrap: wrap; */
@@ -452,7 +450,6 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -515,14 +512,21 @@ img{
     margin-left: auto;
     justify-content: center;
 }
-.page-portfolio-item:hover,
+/* .page-portfolio-item:hover,
 .page-portfolio-item:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 .page-portfolio-list{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+.page-portfolio-link{
+    display: block;
+}
+.page-portfolio-link:hover,
+.page-portfolio-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-card{
     padding: 20px 23px;
